@@ -85,7 +85,7 @@ namespace POGOLib.Official.Net
         /// <summary>
         /// Gets the <see cref="ILoginProvider"/> used to obtain an <see cref="AccessToken"/>.
         /// </summary>
-#if COMMENTOUT
+#if COMMENTOUT // m5219モディファイ
         private ILoginProvider LoginProvider { get; }
 #endif
         public ILoginProvider LoginProvider { get; }
