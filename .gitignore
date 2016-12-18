@@ -243,3 +243,7 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+/submodules/GPSOAuthSharp/
+/submodules/pokemongo-encrypt-sharp/
+/submodules/s2-geometry-library-csharp/
+*.bak
