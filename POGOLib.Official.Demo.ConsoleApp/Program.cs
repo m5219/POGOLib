@@ -82,7 +82,7 @@ namespace POGOLib.Official.Demo.ConsoleApp
             // Configuration.IgnoreHashVersion = true;
 
             // Settings
-            var loginProviderStr = "ptc";
+            var loginProviderStr = "google";
             var usernameStr = Environment.GetEnvironmentVariable("PTC_USERNAME") ?? ""; // Your PTC username
             var passwordStr = Environment.GetEnvironmentVariable("PTC_PASSWORD") ?? ""; // Your PTC password
 

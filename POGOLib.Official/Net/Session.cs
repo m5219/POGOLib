@@ -42,7 +42,10 @@ namespace POGOLib.Official.Net
         // public IDataCache DataCache { get; set; } = new MemoryDataCache();
         // public Templates Templates { get; private set; }
 
+#if COMMENTOUT // m5219 モディファイ
         internal Session(ILoginProvider loginProvider, AccessToken accessToken, GeoCoordinate geoCoordinate, DeviceInfo deviceInfo = null)
+#endif
+        public Session(ILoginProvider loginProvider, AccessToken accessToken, GeoCoordinate geoCoordinate, DeviceInfo deviceInfo = null)
         {
             if (!ValidLoginProviders.Contains(loginProvider.ProviderId))
             {
@@ -83,7 +86,10 @@ namespace POGOLib.Official.Net
         /// <summary>
         /// Gets the <see cref="ILoginProvider"/> used to obtain an <see cref="AccessToken"/>.
         /// </summary>
+#if COMMENTOUT // m5219モディファイ
         private ILoginProvider LoginProvider { get; }
+#endif
+        public ILoginProvider LoginProvider { get; }
 
         /// <summary>
         ///  Gets the <see cref="AccessToken"/> of the <see cref="Session" />.
